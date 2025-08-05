@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transcrição de Anamneses</title>
+  <style>
+    body {
+      background-color: #a8d5a2; /* verde suave */
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      color: #1e3d24;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 30px;
+    }
+
+    .circle-btn {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: none;
+      background-color: #3c6e47;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .circle-btn:hover {
+      background-color: #2e5537;
+      transform: scale(1.05);
+    }
+
+    /* Play: ▶️ Pause: ⏸️ (unicode) */
+  </style>
+</head>
+<body>
+  <h1>Transcrição de Anamneses Médicas</h1>
+  
+  <div class="buttons">
+    <button class="circle-btn" id="playBtn">▶️</button>
+    <button class="circle-btn" id="pauseBtn">⏸️</button>
+  </div>
+
+  <script>
+    document.getElementById("playBtn").onclick = () => alert("Iniciando gravação...");
+    document.getElementById("pauseBtn").onclick = () => alert("Pausando gravação...");
+  </script>
+</body>
+</html>
