@@ -5,7 +5,7 @@
   <title>Transcrição de Anamneses Médicas</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Times New Roman', sans-serif;
       background-color: #a8d5a2;
       color: #333;
       display: flex;
@@ -24,6 +24,7 @@
     }
 
     .buttons {
+      font-family: 'Times New Roman', sans-serif;
       display: flex;
       gap: 40px;
       margin-bottom: 30px;
@@ -53,8 +54,9 @@
     #resultado {
       background-color: white;
       padding: 20px;
-      border-radius: 8px;
-      max-width: 600px;
+      width: 800px;
+      height: 200px;
+      border-radius: 10px;
       text-align: center;
       font-size: 1.1rem;
       color: #1e1e1e;
@@ -63,15 +65,15 @@
   </style>
 </head>
 <body>
-  <h1>Transcrição de Anamneses Médicas</h1>
+  <h1>Medical History Transcription</h1>
 
   <div class="buttons">
-    <button class="circle-btn" id="start" title="Iniciar Gravação">▶️</button>
-    <button class="circle-btn" id="stop" title="Parar Gravação" disabled>⏸️</button>
+    <button class="circle-btn" id="start" title="Iniciar Gravação">Play</button>
+    <button class="circle-btn" id="stop" title="Parar Gravação" disabled>Stop</button>
   </div>
 
-  <div id="resultado">A transcrição aparecerá aqui.</div>
+  <div id="resultado"></div>
 
-  <script src="/static/script.js"></script>
+  <script src="/static/script.js">texto</script>
 </body>
 </html>
